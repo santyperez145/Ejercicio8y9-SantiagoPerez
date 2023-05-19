@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#header{
+    height: 10vh;
+}
+
+#main{
+    background-color: grey;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* formulario */
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+
+fieldset{
+    border-radius: 1rem;
+
+}
+.contenedor-registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: palevioletred;
+    padding-left: 5px;
+    border-radius: 1rem;
+    height: 60vh;
+}
+
+.contenedor-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: cyan;
+    height: 60vh;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+input{
+    border-left: 2px solid black;
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+}
+
+textarea{
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-radius: 0.4rem;
+}
+
+.img{
+    width: 25rem;
+    height: 17rem;
+}
+
+/* ------------------footer--------- */
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    font-size: 2rem;
+    min-height: 6vh;
+    width: 100%;
+}
+
+
+@media screen and (min-width:320px) and (max-width:430px) {
+    html{
+        font-size: 10px;
+    }
+    #header{
+        background-color: rgb(32, 47, 162);
+    }
+
+    h1{
+        color: rgb(255, 255, 255);
+    }
+    #main{
+        background-color: rgb(113, 220, 234);
+    }
+    input{
+        border-left: 2px solid black;
+        border-radius: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .img{
+        width: 22rem;
+        height: 15rem;
+    }
+    #footer{
+        background-color: rgb(175, 82, 184);
+    }
+    }
+
+    @media screen and (min-width:431px) and (max-width:768px){
+        #header{
+            background-color: rgb(190, 72, 149);
+        }
+    
+        h1{
+            color: rgb(24, 10, 10);
+        }
+        #main{
+            background-color: rgb(163, 10, 92);
+        }
+        input{
+            border-left: 2px solid rgb(227, 164, 37);
+            border-radius: 0.5rem;
+            font-size: 1.5rem;
+        }
+    
+        .img{
+            width: 22rem;
+            height: 15rem;
+        }
+        #footer{
+            background-color: rgb(77, 255, 0);
+        }
+        .contenedor-registro{
+            background-color: rgba(4, 234, 255, 0.539);
+        }
+        
+        .contenedor-formulario{
+            background-color: rgba(101, 3, 205, 0.539);
+        }
+    }
